@@ -1,6 +1,83 @@
+/// docid: phpx/json/json_encode()
+/// <Function name="json_encode">
+///   <Description>PHPX standard module function `json_encode` from `json`.</Description>
+///   <Parameter name="$value" type="mixed" required="true" typeLink="/docs/php/types/mixed">
+///     Parameter $value.
+///   </Parameter>
+///   <Parameter name="$flags" type="int" required="false" typeLink="/docs/php/types/int">
+///     Parameter $flags.
+///   </Parameter>
+///   <Parameter name="$depth" type="int" required="false" typeLink="/docs/php/types/int">
+///     Parameter $depth.
+///   </Parameter>
+///   <ReturnType type="string|false" />
+/// </Function>
 export function json_encode($value: mixed, $flags: int = 0, $depth: int = 512): string|false
+
+/// docid: phpx/json/json_decode()
+/// <Function name="json_decode">
+///   <Description>PHPX standard module function `json_decode` from `json`.</Description>
+///   <Parameter name="$json" type="string" required="true" typeLink="/docs/php/types/string">
+///     Parameter $json.
+///   </Parameter>
+///   <Parameter name="$assoc" type="bool" required="false" typeLink="/docs/php/types/bool">
+///     Parameter $assoc.
+///   </Parameter>
+///   <Parameter name="$depth" type="int" required="false" typeLink="/docs/php/types/int">
+///     Parameter $depth.
+///   </Parameter>
+///   <Parameter name="$flags" type="int" required="false" typeLink="/docs/php/types/int">
+///     Parameter $flags.
+///   </Parameter>
+///   <ReturnType type="mixed" typeLink="/docs/php/types/mixed" />
+/// </Function>
 export function json_decode($json: string, $assoc: bool = false, $depth: int = 512, $flags: int = 0): mixed
+
+/// docid: phpx/json/json_decode_result()
+/// <Function name="json_decode_result">
+///   <Description>PHPX standard module function `json_decode_result` from `json`.</Description>
+///   <Parameter name="$json" type="string" required="true" typeLink="/docs/php/types/string">
+///     Parameter $json.
+///   </Parameter>
+///   <Parameter name="$assoc" type="bool" required="false" typeLink="/docs/php/types/bool">
+///     Parameter $assoc.
+///   </Parameter>
+///   <Parameter name="$depth" type="int" required="false" typeLink="/docs/php/types/int">
+///     Parameter $depth.
+///   </Parameter>
+///   <Parameter name="$flags" type="int" required="false" typeLink="/docs/php/types/int">
+///     Parameter $flags.
+///   </Parameter>
+///   <ReturnType type="array" typeLink="/docs/php/types/array" />
+/// </Function>
 export function json_decode_result($json: string, $assoc: bool = false, $depth: int = 512, $flags: int = 0): array
+
+/// docid: phpx/json/json_last_error()
+/// <Function name="json_last_error">
+///   <Description>PHPX standard module function `json_last_error` from `json`.</Description>
+///   <ReturnType type="int" typeLink="/docs/php/types/int" />
+/// </Function>
 export function json_last_error(): int
+
+/// docid: phpx/json/json_last_error_msg()
+/// <Function name="json_last_error_msg">
+///   <Description>PHPX standard module function `json_last_error_msg` from `json`.</Description>
+///   <ReturnType type="string" typeLink="/docs/php/types/string" />
+/// </Function>
 export function json_last_error_msg(): string
+
+/// docid: phpx/json/json_validate()
+/// <Function name="json_validate">
+///   <Description>PHPX standard module function `json_validate` from `json`.</Description>
+///   <Parameter name="$json" type="string" required="true" typeLink="/docs/php/types/string">
+///     Parameter $json.
+///   </Parameter>
+///   <Parameter name="$depth" type="int" required="false" typeLink="/docs/php/types/int">
+///     Parameter $depth.
+///   </Parameter>
+///   <Parameter name="$flags" type="int" required="false" typeLink="/docs/php/types/int">
+///     Parameter $flags.
+///   </Parameter>
+///   <ReturnType type="bool" typeLink="/docs/php/types/bool" />
+/// </Function>
 export function json_validate($json: string, $depth: int = 512, $flags: int = 0): bool
