@@ -1,7 +1,7 @@
-import { result_ok, result_err } from '@deka/core/result';
-import { byte_is_digit, byte_is_hex, byte_is_whitespace } from '@deka/core/byte';
-import { num_parse_int, num_parse_float } from '@deka/core/num';
-import { bridge } from '@deka/core/bridge';
+import { result_ok, result_err } from 'core/result';
+import { byte_is_digit, byte_is_hex, byte_is_whitespace } from 'core/byte';
+import { num_parse_int, num_parse_float } from 'core/num';
+import { bridge } from 'core/bridge';
 
 const __DEKA_JSON_ERROR_KEY = '__deka_json_last_error';
 const __DEKA_JSON_ERROR_MSG_KEY = '__deka_json_last_error_msg';
