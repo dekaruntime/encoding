@@ -47,7 +47,7 @@ export function u32_le($value: int): string
 ///   <Parameter name="$offset" type="int" required="false" typeLink="/docs/php/types/int">
 ///     Parameter $offset.
 ///   </Parameter>
-///   <ReturnType type="Object<" />
+///   <ReturnType type="Object<{ ok: bool, value?: int, next?: int, error?: string }>" />
 /// </Function>
 export function read_u16_be($bytes: string, $offset: int = 0): Object<{ ok: bool, value?: int, next?: int, error?: string }>
 
@@ -60,7 +60,7 @@ export function read_u16_be($bytes: string, $offset: int = 0): Object<{ ok: bool
 ///   <Parameter name="$offset" type="int" required="false" typeLink="/docs/php/types/int">
 ///     Parameter $offset.
 ///   </Parameter>
-///   <ReturnType type="Object<" />
+///   <ReturnType type="Object<{ ok: bool, value?: int, next?: int, error?: string }>" />
 /// </Function>
 export function read_u16_le($bytes: string, $offset: int = 0): Object<{ ok: bool, value?: int, next?: int, error?: string }>
 
@@ -73,7 +73,7 @@ export function read_u16_le($bytes: string, $offset: int = 0): Object<{ ok: bool
 ///   <Parameter name="$offset" type="int" required="false" typeLink="/docs/php/types/int">
 ///     Parameter $offset.
 ///   </Parameter>
-///   <ReturnType type="Object<" />
+///   <ReturnType type="Object<{ ok: bool, value?: int, next?: int, error?: string }>" />
 /// </Function>
 export function read_u32_be($bytes: string, $offset: int = 0): Object<{ ok: bool, value?: int, next?: int, error?: string }>
 
@@ -86,7 +86,7 @@ export function read_u32_be($bytes: string, $offset: int = 0): Object<{ ok: bool
 ///   <Parameter name="$offset" type="int" required="false" typeLink="/docs/php/types/int">
 ///     Parameter $offset.
 ///   </Parameter>
-///   <ReturnType type="Object<" />
+///   <ReturnType type="Object<{ ok: bool, value?: int, next?: int, error?: string }>" />
 /// </Function>
 export function read_u32_le($bytes: string, $offset: int = 0): Object<{ ok: bool, value?: int, next?: int, error?: string }>
 
